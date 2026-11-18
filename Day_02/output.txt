@@ -1,0 +1,34 @@
+
+Catalogue
+inorder ['Audio', 'Books', 'Cameras', 'Clothes', 'Denim', 'Electronics', 'Games', 'Home', 'Kitchen', 'Lights', 'Shoes', 'Sports', 'Tech', 'Toys', 'Travel']
+preorder ['Home', 'Clothes', 'Books', 'Audio', 'Cameras', 'Electronics', 'Denim', 'Games', 'Sports', 'Kitchen', 'Lights', 'Shoes', 'Toys', 'Tech', 'Travel']
+postorder ['Audio', 'Cameras', 'Books', 'Denim', 'Games', 'Electronics', 'Clothes', 'Shoes', 'Lights', 'Kitchen', 'Tech', 'Travel', 'Toys', 'Sports', 'Home']
+Collision bucket: [(3, 'SKU 3'), (8, 'SKU 8')]
+Chained map, 100000 lookups: 0.043134 s
+dict, 100000 lookups: 0.009274 s
+Deployment: ['inventory', 'pricing', 'cart', 'orders']
+Circular dependency at cart
+Peak 3-hour window: (600, 27000)
+Pairs: [(1, 9), (3, 7), (5, 5)]
+PASS
+
+Insurance
+inorder [10, 20, 30, 35, 45]
+preorder [30, 10, 20, 45, 35]
+postorder [20, 10, 35, 45, 30]
+Duplicate claims: [('pol1', '2026-10-14')]
+Shortest path: ['Registration', 'Assessment', 'Settlement']
+Acyclic workflow: ['Registration', 'Assessment', 'Surveyor', 'Settlement']
+Circular dependency at Assessment
+Longest >100 run: 3
+Merged claims: [10, 10, 25, 30]
+PASS
+
+Logistics
+Insertion order / sorted edge height: 3 9
+Tracking: ['DEL', 'BOM', 'DEL'] | repeat: [('P01', 'DEL')]
+Adjacency: {'DEL': ['JAI', 'CCU', 'HYD'], 'BOM': ['AMD', 'PUN', 'GOI'], 'HYD': ['DEL', 'BLR'], 'BLR': ['GOI', 'HYD', 'CHE'], 'CHE': ['BLR'], 'GOI': ['BOM', 'BLR'], 'JAI': ['DEL', 'AMD'], 'CCU': ['DEL'], 'AMD': ['JAI', 'BOM'], 'PUN': ['BOM']}
+BFS route: ['DEL', 'HYD', 'BLR', 'CHE'] | DFS reachable: ['AMD', 'BLR', 'BOM', 'CCU', 'CHE', 'DEL', 'GOI', 'HYD', 'JAI', 'PUN']
+Peak 4-hour window: 2 14.0
+DEL / bom - del is a palindrome
+PASS

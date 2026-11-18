@@ -1,0 +1,37 @@
+
+Retail
+linear: 0.117260 s
+binary: 0.000382 s
+Built-in sort: 0.001074 s
+Insertion sort: 3.152543 s
+Merge sort: 0.023570 s
+Insertion pass 1: [8, 2, 5, 3, 7]
+Insertion pass 2: [8, 5, 2, 3, 7]
+Insertion pass 3: [8, 5, 3, 2, 7]
+Duplicate count: 1 | first: (2, 1, 100, '2026-10-14T09:00:00')
+FIFO: order #1 original edit order #2 latest edit | LIFO: order #2 latest edit
+Refund 68: [50, 10, 5, 2, 1]
+Refund 6, greedy: [4, 1, 1] DP: [3, 3]
+PASS
+
+Banking
+Best/mean/worst successful key probes: (1, 15.68946, 17) linear: (1, 50000.5, 100000)
+Stable statement: [(1, 'debit'), (2, 'credit A'), (2, 'credit B')]
+Rolling 60-second duplicates: [60]
+FIFO: adjustment A adjustment B | LIFO: adjustment B
+Day min/max: -4 120 | divide-and-conquer: 10 | scan: 14
+PASS
+
+Hospital
+linear: 0.212166 s
+binary: 0.001064 s
+Selection: 0.011062 s
+Quicksort: 0.000627 s
+Swaps: 492 990
+Selection pass 1 [(5, 0), (3, 1), (3, 2), (4, 3), (4, 4)]
+Selection pass 2 [(5, 0), (4, 3), (3, 2), (3, 1), (4, 4)]
+Selection pass 3 [(5, 0), (4, 3), (4, 4), (3, 1), (3, 2)]
+Double bookings: [('P1', '09:00')]
+FIFO: token 101 token 102 | LIFO: token 102
+Slots: [(0, 2), (2, 5), (5, 8), (0, 9), (6, 10)] | DP/earliest-finish: 3 3
+PASS
